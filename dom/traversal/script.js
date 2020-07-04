@@ -7,7 +7,7 @@
 
 // DOM Traversal
 
-const close = document.querySelectorAll('.close');
+// const close = document.querySelectorAll('.close');
 
 // dengan for
 // for (let i = 0; i < close.length; i++){
@@ -17,13 +17,29 @@ const close = document.querySelectorAll('.close');
 //     });
 // }
 
-close.forEach(function(el){
-    el.addEventListener('click',function(e){
-        e.target.parentElement.style.display='none';
-        e.preventDefault();
-    });
-});
+// close.forEach(function(el){
+//     el.addEventListener('click',function(e){
+//         e.target.parentElement.style.display='none';
+//         e.preventDefault();
+//         e.stopPropagation();
+//      });
+// });
 
 
-const nama = document.querySelector('.nama');
+// const cards = document.querySelectorAll('.card');
+// cards.forEach(function(card){
+//     card.addEventListener('click',function(e) {
+//         alert('ok');
+//     })
+// });
+
+
+// const nama = document.querySelector('.nama');
  
+const container = document.querySelector('.container');
+container.addEventListener('click',function(e){
+    if(e.target.className == 'close') {
+        e.target.parentElement.style.display = 'none';
+        e.preventDefault();
+    }
+}); 
