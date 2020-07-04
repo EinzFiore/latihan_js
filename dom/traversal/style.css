@@ -9,6 +9,10 @@ body {
     margin: auto;
 }
 
+.card a{
+    text-decoration: none;
+}
+
 .card {
     display: inline-block;
     width: 220px;
