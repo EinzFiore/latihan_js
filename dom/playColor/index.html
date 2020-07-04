@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Color With JS DOM</title>
+    <style>
+        html, body{
+            height: 100%;
+        }
+
+        body{
+            text-align: center;
+        }
+
+        .btn{
+            background-color: #3498db;
+            color: white;
+            padding: 4px 4px;
+            border: #34495e;
+            width: 100px;
+            height: 40px;
+            border-radius: 7px;
+        }
+
+        .bgColor{
+            background-color: #2980b9;
+            color: white;
+        }
+
+        .kotak {
+            width: 25px;
+            height: 25px;
+            margin: 10px auto;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bermain dengan Warna</h1>
+    <button id="btn" type="button" class="btn">Favorite Color</button>
+    <br><br>
+    <div class="kotak red"></div>
+    <input type="range" name="red" id="red" min="0" max="255">
+    
+    <div class="kotak green"></div>
+    <input type="range" name="green" id="green" min="0" max="255">
+    
+    <div class="kotak blue"></div>
+    <input type="range" name="blue" id="blue" min="0" max="255">
+    <script src="./script.js"></script>
+</body>
+</html>
